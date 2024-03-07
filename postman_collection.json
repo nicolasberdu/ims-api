@@ -1,0 +1,1326 @@
+{
+	"info": {
+		"_postman_id": "4a120ac9-7810-4b2a-9858-0a751b8f7331",
+		"name": "IMS-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "category index",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel}}/api/categories?per_page=5&search=egoria de ejem",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "per_page",
+									"value": "5"
+								},
+								{
+									"key": "search",
+									"value": "egoria de ejem"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "cat13",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "categoria 13",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "categoria de ejemplo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/categories",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category show",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{laravel}}/api/categories/cat5",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"cat5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "cat60",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "categoria 60",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "categoria de ejemplo actualizada",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/categories/cat60",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"cat60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel}}/api/categories/cat5",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"cat5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "products index",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel}}/api/products",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "510022",
+									"type": "text"
+								},
+								{
+									"key": "product_name",
+									"value": "producto 22",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "producto de ejemplo",
+									"type": "text"
+								},
+								{
+									"key": "category_code",
+									"value": "cat10",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "10.07",
+									"type": "text"
+								},
+								{
+									"key": "is_enabled",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/products",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel}}/api/products/510022",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"510022"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "510016",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "product_name",
+									"value": "producto actualizado 6",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "descripcion actualizada",
+									"type": "text"
+								},
+								{
+									"key": "category_code",
+									"value": "cat3",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "20.35",
+									"type": "text"
+								},
+								{
+									"key": "is_enabled",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/products/510016",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"510016"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel}}/api/products/510016",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"510016"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "berdunicolas@email.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/login",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userinfo",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|F9HrCmmQQ7811j4HhwfD1AqRQVvY3oRMFOrcbUEm70577387",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{laravel}}/api/userinfo",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"userinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registrar",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "{{user}}",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "{{email}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "pass123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/register",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Prueba de integracion",
+			"item": [
+				{
+					"name": "01 registrar",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Created 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"}); "
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "{{user}}",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "{{email}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{pass}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/register",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 obtener token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "{{email}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{pass}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/login",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 crear categoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "cat13",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "categoria 13",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "categoria de ejemplo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/categories",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 crear categoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "cat13",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "categoria 13",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "categoria de ejemplo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/categories",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 ver categorias",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel}}/api/categories?per_page=5&search=egoria de ejem",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "per_page",
+									"value": "5"
+								},
+								{
+									"key": "search",
+									"value": "egoria de ejem"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 ver categoria",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{laravel}}/api/categories/cat5",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"cat5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "07 editar categoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "cat60",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "categoria 60",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "categoria de ejemplo actualizada",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/categories/cat60",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"cat60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "08 eliminar categoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel}}/api/categories/cat5",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"cat5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "09 creo producto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "510022",
+									"type": "text"
+								},
+								{
+									"key": "product_name",
+									"value": "producto 22",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "producto de ejemplo",
+									"type": "text"
+								},
+								{
+									"key": "category_code",
+									"value": "cat10",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "10.07",
+									"type": "text"
+								},
+								{
+									"key": "is_enabled",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/products",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "10 creo producto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "510022",
+									"type": "text"
+								},
+								{
+									"key": "product_name",
+									"value": "producto 22",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "producto de ejemplo",
+									"type": "text"
+								},
+								{
+									"key": "category_code",
+									"value": "cat10",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "10.07",
+									"type": "text"
+								},
+								{
+									"key": "is_enabled",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/products",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "11 veo productos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel}}/api/products",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "12 veo producto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel}}/api/products/510022",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"510022"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13 edito categoria asignada",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "cat60",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "categoria 60",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "categoria de ejemplo actualizada",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/categories/cat60",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"cat60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "14 edito producto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "510016",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "product_name",
+									"value": "producto actualizado 6",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "descripcion actualizada",
+									"type": "text"
+								},
+								{
+									"key": "category_code",
+									"value": "cat3",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "20.35",
+									"type": "text"
+								},
+								{
+									"key": "is_enabled",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel}}/api/products/510016",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"510016"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "15 elimino producto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|qkJE5ujQKPaB9KJKqp043KvWzvHHwmTStLIFMZsw77502b92",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel}}/api/products/510016",
+							"host": [
+								"{{laravel}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"510016"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.variables.set(\"user\", \"postmanuser\");",
+							"pm.variables.set(\"email\", \"postmanuser@email.com\");",
+							"pm.variables.set(\"pass\", \"pass1234\");",
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
